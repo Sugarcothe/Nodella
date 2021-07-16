@@ -1,0 +1,220 @@
+@import '../../global.scss';
+
+.third{
+  background-color:black;
+
+  .container {
+    align-items: center;
+    justify-content: center;
+
+    @include mobile {
+      margin-bottom: 4rem;
+    }
+
+
+    h1{
+      font-size: 4rem;
+      padding-left: 4rem;
+      font-weight: 900;
+      font-family: 'Roboto', sans-serif;
+      color: $dark-yellow;
+      margin-top: 8rem;
+      margin-bottom: 10rem;
+
+      @include mobile {
+        font-size: 2rem;
+        padding-left: 4rem;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        color: $dark-yellow;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+
+      }
+    }
+    .albums {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-left: 4rem;
+      font-family: 'Roboto', sans-serif;
+    }
+    .section{
+      display: flex;
+      flex-direction: row;
+      margin-left: 3rem;
+
+      @include mobile {
+        align-items: center;
+        justify-content: center;
+        margin-left: unset;
+      }
+
+      .left{
+        display: flex;
+        flex-direction: row;
+
+          .col{
+            display: flex;
+            flex-direction: column;
+            margin: 0.5rem;
+
+              @include mobile {
+                margin: 10px;
+              }
+            
+            img{
+              width: 150px;
+              height: auto;
+
+              @include mobile {
+                width: 70px;
+              }
+            }
+            
+            .sect {
+              display: flex;
+              margin-top: 1rem;
+              @include mobile {
+                display: none;
+              }
+
+              .title{
+                p{
+                  font-size: 10px;
+                  color: $dark-yellow;
+                }
+              }
+
+              .likes{
+                margin-left: 3.6rem;
+
+              }
+            }
+  
+  
+            img{
+              border-radius: 10px;
+              transition: all 3s ease;
+              cursor: pointer;
+              
+              &:hover{
+                border-radius: 50%;
+                transform: rotate(1000deg);
+                animation: shake 0.5s;
+                animation-iteration-count: infinite;
+              }
+              @keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+            }
+          }
+        
+      }
+      .right {
+        margin-left: 8rem;
+
+        @include mobile {
+          display: none;
+        }
+      }
+    }
+
+    .section2 {
+      display: flex;
+      flex-direction: row;
+      margin-left: 3rem;
+
+      @include mobile {
+        align-items: center;
+        justify-content: center;
+        margin-left: unset;
+      }
+
+
+      .left{
+        display: flex;
+        flex-direction: row;
+          .col{
+            display: flex;
+            flex-direction: column;
+            margin: 0.5rem;
+            
+            @include mobile {
+              margin: 10px;
+            }
+
+            img {
+              width: 150px;
+              height: auto;
+
+              @include mobile {
+                width: 70px;
+                height: auto;
+              }
+            }
+          
+
+            .sect {
+              display: flex;
+              margin-top: 1rem;
+
+              @include mobile {
+                display: none;
+              }
+              
+              .title{
+                p{
+                  font-size: 10px;
+                  color: $dark-yellow;
+                }
+              }
+              
+
+              .likes{
+                margin-left: 3.6rem;
+              }
+            }
+  
+            img{
+              border-radius: 10px;
+              transition: all 3s ease;
+              
+              &:hover{
+                border-radius: 50%;
+                transform: rotate(1000deg);
+                animation: shake 0.5s;
+                animation-iteration-count: infinite;
+              }
+              @keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+            }
+          }
+        
+      }
+
+    }
+
+
+  }
+}

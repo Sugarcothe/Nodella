@@ -1,0 +1,107 @@
+@import '../../global.scss';
+
+.fourth {
+  background-color: black;
+
+  @include mobile {
+    display: none;
+  }
+
+  .container {  
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15rem;
+
+    .left {
+      margin: 8rem;
+    }
+
+    .right {
+      margin-left: 15rem;
+      margin-top: 8rem;
+      width: 30rem;
+      h1 {
+        font-size: 4rem;
+        color: $dark-yellow;
+        font-weight: 800;
+        font-family: 'Roboto', sans-serif;
+      }
+      p {
+        padding-top: 2rem;
+        font-size: 1.5rem;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        opacity: 0.4;
+        
+      }
+      .songs {
+        display: flex;
+        flex-direction: column;
+
+        .tracks {
+          display: flex;
+          flex-direction: row;
+
+          h4{
+            margin-top: 2rem;
+            margin-right: 2rem;
+            font-size: 2rem;
+          }
+          .names {
+            display: flex;
+            flex-direction: column;
+            
+            margin-top: 2rem;
+            margin-right: 5rem;
+
+            h4{
+              margin: 0;
+              border: border-box;
+            }
+
+          }
+          .imago{
+            margin-top: 2rem;
+            margin-right: 5rem;
+            transition: all 2s ease;
+            &:hover {
+              border-radius: 50%;
+              transform: scale(0.8);
+              
+            }
+          }
+          .names{
+            display: flex;
+          }
+          .imago2 {
+            margin-top: 2rem;
+            margin-right: 5rem;
+            border-radius: 50%;
+            animation: rotation 2s infinite linear;
+
+            @keyframes rotation {
+              from {
+                transform: rotate(0deg);
+              }
+              to {
+                transform: rotate(359deg);
+              }
+            }
+            }
+          .icon {
+            margin-top: 2rem;
+            margin-right: 2rem;
+            font-size: 2rem;
+            color: rgb(70, 67, 67);
+          }
+          .icon2 {
+            margin-top: 2rem;
+            margin-right: 2rem;
+            font-size: 2rem;
+            color: rgb(255, 255, 255);
+          }
+        }
+      }
+    }
+  }
+}

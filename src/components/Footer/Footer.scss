@@ -1,0 +1,132 @@
+@import '../../global.scss';
+ body{
+   background-color: black;
+ }
+.footer {
+  background-color: rgb(17, 17, 17);
+  margin-top: 16rem;
+
+  .container {
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+
+    @include mobile {
+      margin-top: 2rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      margin-bottom: 15rem;
+      padding-top: 7rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sect1 {
+      display: flex;
+      flex-direction: column;
+
+      @include mobile {
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        width: 90px;
+        margin: 2rem;
+
+        @include mobile {
+          margin: unset;
+        }
+      }
+      
+      .copyright {
+        margin-left: 2rem;
+        @include mobile {
+          margin: unset;
+        }
+      }
+      .last {
+        margin-top: 1.5rem;
+        .sm {
+          margin-right: 1.2rem;
+          font-size: 10px;
+          
+        }
+      }
+    }
+
+    .sect2  {
+      margin-left: 7rem;
+
+      @include mobile {
+        display: none;
+      }
+
+      p{
+        margin: 2rem;
+        font-size: 12px;
+      }
+    }
+    .sect2  {
+      margin-left: 7rem;
+      @include mobile {
+        display: none;
+      }
+
+      p{
+        margin: 2rem;
+        font-size: 12px;
+      }
+    }
+    .sect3  {
+      margin-left: 7rem;
+      @include mobile {
+        display: none;
+      }
+
+      p{
+        margin: 2rem;
+        font-size: 12px;
+      }
+    }
+    .sect4  {
+      margin-left: 6rem;
+
+      @include mobile {
+        display: none;
+      }
+
+      p{
+        margin: 2rem;
+        font-size: 12px;
+      }
+    }
+    .sect5 {
+      margin-top: 7rem;
+      display: flex;
+      flex-direction: column;
+      margin-left: 5rem;
+
+      @include mobile {
+        display: none;
+      }
+
+     .sector{
+       display: flex;
+       flex-direction: row;
+       margin-top: 2rem;
+       justify-content: space-between;
+       .fab {
+         margin-right: 1rem;
+       }
+       
+     }
+     p{
+      margin-top: 2rem;
+    }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+@import '../../global.scss';
+
+.eight{
+  background-color: black;
+
+  .container{  
+    display: flex;
+    flex-direction: row;
+    margin-top: 15rem;
+    margin-bottom: 20rem;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      margin-top: 5rem;
+      margin-bottom: 10rem;
+    }
+
+    .left {
+      // margin: 8rem;
+      
+      img{
+        border-radius: 13px;
+        margin: 8rem;
+        width: 400px;
+
+        @include mobile {
+          width: 300px;
+          height: 'auto';
+          border-radius: 13px;
+          margin: 3rem;
+        }
+      }
+    }
+    .right {
+      margin-top: 4rem;
+
+      h1 {
+        font-size: 4rem;
+        width: 35rem;
+        color: $dark-yellow;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+
+        @include mobile {
+          font-size: 2rem;
+          width: unset;
+          color: $dark-yellow;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+          margin-left: 1rem;
+        }
+      }
+      h2 {
+        font-size: 4rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+
+        @include mobile {
+          font-size: 3rem;
+          font-family: 'Roboto', sans-serif;
+          margin-left: 1rem;
+          font-weight: 900;
+        }
+      }
+      p {
+        width: 25rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        opacity: 0.5;
+
+        @include mobile {
+          width: 20rem;
+          text-align: justify;
+          margin: 1rem;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 100;
+          opacity: 0.5;
+        }
+      
+      }
+
+      .imago {
+        display: flex;
+        // flex-direction: row;
+
+        .images1 {
+          width: 250px;
+          height: auto;
+          cursor: pointer;
+        }
+        .images {
+          width: 200px;
+          height: auto;
+          cursor: pointer;
+
+          @include mobile {
+            width: 130px;
+            height: auto;
+            cursor: pointer;
+          }
+
+          
+        }
+      }
+
+    }
+  }
+}

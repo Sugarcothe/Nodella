@@ -1,0 +1,30 @@
+.App {
+  height: 100vh;
+
+
+.sections {
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-color: rgb(85, 83, 83);
+  position: relative;
+  top: 80px;
+
+  // scrolling 
+  // scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  // hide scroll bar
+  // for firefox
+  scrollbar-width: none; 
+  
+  // for other browsers like chrome and others
+  &::-webkit-scrollbar{display: none}
+
+  > * {
+    quotes: 100vw;
+    // height: calc(100vh - 70px);
+
+    // scrolling would return to closest section when released
+    scroll-snap-align: start;
+  }
+  }
+}
