@@ -4,7 +4,8 @@ import './Navbar.scss'
 
 const Navbar = ({menuOpen, setMenuOpen}) => {
   return (
-    <div className={'navbar ' + (menuOpen && 'active')}>
+    <div className='navContainer'>
+       <div className={'navbar ' + (menuOpen && 'active')}>
       <div className='wrapper'>
         <div className='left'>
           <a href='#home' className='logo'><img  styel={{height:20}} src='assets/logo.png' alt=''/></a>
@@ -20,7 +21,7 @@ const Navbar = ({menuOpen, setMenuOpen}) => {
         <div className='text'>
           <h4>Signup/Login</h4>
         </div>
-        <div>
+        <div className='yellowButton'>
           <img style={{cursor:'pointer'}} src='assets/butt.png' alt=''/>
         </div>
         <div className='center'>
@@ -32,8 +33,28 @@ const Navbar = ({menuOpen, setMenuOpen}) => {
             <span className='line3'></span>
           </div>
         </div>
-      </div>
-      
+      </div> 
+    </div>
+
+    <div className={'navbar1 ' + (menuOpen && 'active')}>
+      <div className='wrapper'>
+        <div className='left'>
+          <a href='#home' className='logo'><img  styel={{height:20}} src='assets/logo.png' alt=''/></a>
+          <input 
+            class="form-inpute" 
+            placeholder="Search for artist, songs, albums..."
+          />
+        </div>
+
+        <div className='right'>
+          <div className='harmburger' onClick={() => setMenuOpen(!menuOpen)}>
+            <span className='line1'></span>
+            <span className='line2'></span>
+            <span className='line3'></span>
+          </div>
+        </div>
+      </div> 
+    </div>
     </div>
   )
 }

@@ -2,9 +2,6 @@
 
 .fifth{
   background-color: $dark-yellow;
-  
-  @include mobile {
-  }
 
   .container {
     display: flex;

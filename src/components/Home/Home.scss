@@ -3,6 +3,8 @@
 @import '../../global.scss';
 
 .home {
+
+
   background-color: black;
 
   .container {
@@ -28,8 +30,6 @@
 
       h1{
         @include mobile {
-          text-align: justify;
-          text-justify: inter-word;
           color: $dark-yellow;
         }
       }
@@ -39,12 +39,11 @@
         margin-top: 2rem;
 
         @include mobile {
-          max-width: 500px;
-          
+          max-width: 600px; 
           display: flex;
           align-items: center;
           justify-content: center;
-          margin-right: 6rem;
+          margin-right: 4rem;
         }
 
       }
